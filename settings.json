@@ -7,6 +7,13 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "agent_servers": {
+    "your_agent": {
+      "command": "path_to_executable",
+      "args": [],
+      "env": {}
+    }
+  },
   "preview_tabs": {
     "enabled": false
   },
@@ -26,29 +33,29 @@
   "agent": {
     "model_parameters": [],
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4o"
+      "provider": "ollama",
+      "model": "gpt-oss:20b-cloud"
     }
   },
   "icon_theme": "Catppuccin Macchiato",
   "features": {
-    // "edit_prediction_provider": "supermaven",
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "supermaven",
+    // "edit_prediction_provider": "copilot"
   },
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
   "show_whitespaces": "all",
-  "ui_font_size": 14,
-  "buffer_font_size": 13.0,
+  "ui_font_size": 16,
+  "buffer_font_size": 13,
   "terminal": {
     "env": {
       "Q_NEW_SESSION": "1",
       "CW_NEW_SESSION": "1",
       "FIG_NEW_SESSION": "1"
     },
-    "font_size": 12,
+    "font_size": 13,
     "font_family": "DroidSansM Nerd Font",
     "line_height": "standard"
   },
@@ -56,10 +63,10 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Mocha (Blur)"
+    "dark": "Nord Dark"
   },
   "prettier": {
-    "printWidth": 80,
+    "printWidth": [80, 120],
     "tabWidth": 2,
     "useTabs": false,
     "semi": false,
@@ -72,39 +79,6 @@
     "endOfLine": "lf"
   },
   "languages": {
-    "TSX": {
-      "language_servers": [
-        "typescript-language-server",
-        "!typescript-language-server"
-      ],
-      "formatter": {
-        "external": {
-          "command": "prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
-        }
-      }
-    },
-    "TypeScript": {
-      "language_servers": ["typescript-language-server"],
-      "formatter": {
-        "external": {
-          "command": "prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
-        }
-      }
-    },
-    "JavaScript": {
-      "language_servers": [
-        "javascript-typescript-stdio",
-        "!typescript-language-server"
-      ],
-      "formatter": {
-        "external": {
-          "command": "prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
-        }
-      }
-    },
     "Ruby": {
       "language_servers": ["ruby-lsp", "rubocop", "!solargraph"]
     }
