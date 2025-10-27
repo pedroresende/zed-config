@@ -56,14 +56,14 @@
       "FIG_NEW_SESSION": "1"
     },
     "font_size": 13,
-    "font_family": "DroidSansM Nerd Font",
+    "font_family": "Hack Nerd Font",
     "line_height": "standard"
   },
-  "buffer_font_family": "DroidSansM Nerd Font",
+  "buffer_font_family": "Hack Nerd Font",
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Nord Dark"
+    "dark": "Carbonfox - blurred"
   },
   "prettier": {
     "printWidth": [80, 120],
