@@ -22,7 +22,7 @@
 			"model": "gpt-oss:20b-cloud"
 		}
 	},
-	"icon_theme": "Catppuccin Macchiato",
+	"icon_theme": "Catppuccin Frappé",
 	"features": {
 		"edit_prediction_provider": "supermaven"
 	},
@@ -47,7 +47,7 @@
 	"theme": {
 		"mode": "system",
 		"light": "One Light",
-		"dark": "Nordfox - blurred"
+		"dark": "Nordfox - opaque"
 	},
 	"formatter": {
 		"language_server": {
